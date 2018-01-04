@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'iCheck';
+  src: url("../fonts/iCheck.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icheckbox_flat,
+.iradio_flat {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  font: normal normal normal 1.27rem "iCheck";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #999999;
+}
+
+.icheckbox_flat {
+  color: #404040;
+}
+
+.icheckbox_flat::before {
+  content: "f";
+}
+
+.icheckbox_flat.checked::before {
+  content: "e";
+}
+
+.icheckbox_flat.disabled {
+  opacity: 0.2;
+  cursor: default;
+  color: #999999 !important;
+}
+
+.icheckbox_flat.disabled::before {
+  content: "f";
+}
+
+.icheckbox_flat.checked.disabled::before {
+  content: "e";
+}
+
+.iradio_flat {
+  color: #13ecbd;
+}
+
+.iradio_flat::before {
+  content: "h";
+}
+
+.iradio_flat.checked::before {
+  content: "g";
+}
+
+.iradio_flat.disabled {
+  color: #999999 !important;
+  opacity: 0.2;
+  cursor: default;
+}
+
+.iradio_flat.disabled::before {
+  content: "h";
+}
+
+.iradio_flat.checked.disabled::before {
+  content: "g";
+}

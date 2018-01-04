@@ -1,0 +1,86 @@
+\:root
+  font-size: 16px
+
+// Dimension/font-size based on root em, in this case 16px
+$dimension: 1.27rem
+
+// Checkbox unicode
+// lower case "f"
+$checkboxNotChecked: "\0066"
+// lower case "e"
+$checkboxChecked: "\0065"
+// Radio unicode
+// lower case "h"
+$radioNotChecked: "\0068"
+// lower case "g"
+$radioChecked: "\0067"
+
+// Colors
+$basecolor: hsl(0, 0%, 60%)!default
+$checkboxcolor: hsl(0, 0%, 25%)
+$radiocolor: hsl(167, 85%, 50%)
+
+//Opacity level 0->1 for :disabled state
+$opacity: 0.2
+
+// Boolean (true/false) to give radio the same color as checkbox
+$colorsame: false
+// Boolean to give :disabled state the same custom color or fall back to default ($basecolor)
+$colordisabled: false
+
+@font-face
+  font-family: 'iCheck'
+  src: url('../fonts/iCheck.woff')
+  font-weight: normal
+  font-style: normal
+
+.icheckbox_flat,
+.iradio_flat
+  display: inline-flex
+  cursor: pointer
+  font: normal normal normal $dimension/1 'iCheck'
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  color: $basecolor
+
+.icheckbox_flat
+  color: $checkboxcolor
+  &::before
+    content: $checkboxNotChecked
+  &.checked::before
+      content: $checkboxChecked
+  &.disabled
+    opacity: $opacity
+    cursor: default
+    @if $colordisabled
+      color: $checkboxcolor
+    @else
+      color: $basecolor!important
+    &::before
+      content: $checkboxNotChecked
+  &.checked.disabled::before
+      content: $checkboxChecked
+
+.iradio_flat
+  @if $colorsame
+    color: $checkboxcolor
+  @else
+    color: $radiocolor
+  &::before
+    content: $radioNotChecked
+  &.checked::before
+      content: $radioChecked
+  &.disabled
+    @if $colordisabled
+      @if $colorsame
+        color: $checkboxcolor
+      @else
+        color: $radiocolor
+    @else
+      color: $basecolor!important
+    opacity: $opacity
+    cursor: default
+    &::before
+      content: $radioNotChecked
+  &.checked.disabled::before
+      content: $radioChecked
