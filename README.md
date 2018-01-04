@@ -4,7 +4,7 @@ Currently this is written in SASS but will convert into Scss and Less in the fut
 
 ### currently in development
 
-Tested in following browsers, both mobile and desktop on windows 10
+Tested in following browsers, both mobile and desktop on windows 10/Android
 * Internet explorer(latest)
 * Firefox
 * Chrome
