@@ -1,8 +1,8 @@
 ## iCheck-font
 Adds font functionality to iCheck.js
-Currently this is written in SASS but will convert into Scss and Less in the future.
+Currently this is written in SASS but will port to SCSS, (Stylus?) and Less in the future.
 
-![alt text](https://raw.githubusercontent.com/stevenvg/icheck-font/master/img/showcase1.gif)
+![showcase](https://raw.githubusercontent.com/stevenvg/icheck-font/master/img/showcase1.gif)
 
 ### currently in development
 
@@ -15,4 +15,8 @@ Tested in following browsers, both mobile and desktop on windows 10/Android
 I don't have access to other OS's / browsers. Will test later.
 
 ### to-do
-* to-do ;-)
+* re-factor a ton
+* live demo
+* installation notes
+* option notes
+* include FontForge source font
