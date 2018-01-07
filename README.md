@@ -20,3 +20,4 @@ I don't have access to other OS's / browsers. Will test later.
 * installation notes
 * option notes
 * include FontForge source font
+* expand icon font (too limited atm)
