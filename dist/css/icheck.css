@@ -12,6 +12,7 @@
   display: inline-flex;
   cursor: pointer;
   font: normal normal normal 1.27rem "iCheck";
+  font-family: 'iCheck';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #999999;
@@ -44,7 +45,7 @@
 }
 
 .iradio_flat {
-  color: #13ecbd;
+  color: #404040;
 }
 
 .iradio_flat::before {
