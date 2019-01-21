@@ -3,6 +3,8 @@
 Adds font functionality to iCheck.js
 Currently this is written in SASS but will port to SCSS, (Stylus?) and Less in the future.
 
+![showcase](https://raw.githubusercontent.com/stevenvg/icheck-font/master/img/showcase1.gif)
+
 ### Prerequisites
 
 The things you'll need
