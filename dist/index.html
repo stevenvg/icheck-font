@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iCheck Font Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="./css/icheck.css">
+    <!-- style for demo purposes only-->
+    <style>
+      .container {
+        max-width: 30rem;
+        padding: 1rem;
+        margin: 0 auto
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+      label {
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"><a href="https://github.com/stevenvg/icheck-font">&larr; back to github</a>
+      <h1>iCheck Font Demo</h1>
+      <section>
+        <h2>no label</h2>
+        <input type="checkbox"><br>
+        <input type="radio" name="radio" checked>
+        <input type="radio" name="radio">
+        <input type="radio" name="radio">
+      </section>
+      <section>
+        <h2>with labels</h2>
+        <label for="checker">checkbox with label</label>
+        <input type="checkbox" id="checker"><br>
+        <label for="radio1">radio 1</label>
+        <input type="radio" name="lblradio" id="radio1">
+        <label for="radio2">radio 2</label>
+        <input type="radio" name="lblradio" id="radio2" checked>
+        <label for="radio3">radio 3</label>
+        <input type="radio" name="lblradio" id="radio3">
+      </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        return $('input').iCheck({
+          checkboxClass: 'icheckbox_flat',
+          radioClass: 'iradio_flat'
+        });
+      });
+    </script>
+  </body>
+</html>
